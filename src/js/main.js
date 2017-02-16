@@ -4,7 +4,7 @@ import $ from 'jquery';
 function makeRequest(apples) {
 
     $.ajax({
-      url: 'https://randomuser.me/api/',
+      url: 'https://randomuser.me/api/?results=12',
       dataType: 'json',
       success: apples
     });
@@ -12,12 +12,10 @@ function makeRequest(apples) {
     makeRequest(placeBox);
 
     function placeBox(data) {
-        for (var i =0; i < 16; i++) {
+        for (var i =0; i < 12; i++) {
           var product = data.results[i];
-          var html = boxTemplate(product)
+          var html = boxTemplate(product);
           $('.personBox').append(html);
-        }
-    }
 
      function boxTemplate(product) {
           return `
@@ -28,9 +26,9 @@ function makeRequest(apples) {
                     <div> ${product.location.city}, ${product.location.state}  ${product.location.postcode}</div>
                     <div> ${product.phone}</div>
                 `
-        }
-// //
-//
+              }
+      }
+    }
  // function placeBox() {
  //
  //    for (var i =0; i < 16; i++) {
