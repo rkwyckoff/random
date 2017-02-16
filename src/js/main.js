@@ -20,11 +20,11 @@ function makeRequest(apples) {
      function boxTemplate(product) {
           return `  <div class="personBox">
                     <img src= "${product.picture.large}">
-                    <div> ${product.name.first} ${product.name.last}</div>
-                    <div> ${product.email}</div>
-                    <div> ${product.location.street}</div>
-                    <div> ${product.location.city}, ${product.location.state}  ${product.location.postcode}</div>
-                    <div> ${product.phone}</div>
+                    <div class="name"> ${product.name.first} ${product.name.last}</div>
+                    <div class="email"> ${product.email}</div>
+                    <div class="street"> ${product.location.street}</div>
+                    <div class="csp"> ${product.location.city}, ${product.location.state}  ${product.location.postcode}</div>
+                    <div class="phone"> ${product.phone}</div>
                     </div>
                 `
               }

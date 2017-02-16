@@ -4,7 +4,7 @@
   -webkit-box-sizing: border-box;
   }
 .container {
-  width:1200px;
+  width:1175px;
   height: 1000px;
   margin: 20px auto;
   border: 1px lightgrey solid;
@@ -16,10 +16,48 @@ h1 {
 
 .personBox {
   width: 25%;
-  height:250px;
-  border: lightgrey 1px solid;
+  height:475px;
+  //border: lightgrey 1px solid;
   float:left;
   overflow: hidden;
 
 
+img {
+  width:95%;
+  height: 50%
+
+}
+}
+.name {
+  height: 30px;
+  text-align: center;
+  font-size: 20px;
+  margin-top: 20px;
+
+  .uppercase {
+  text-transform: uppercase;
+  }
+
+}
+.email {
+  height:25px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.street {
+  height:25px;
+  text-align: center;
+  font-size: 12px;
+}
+
+.csp {
+  height:25px;
+  text-align: center;
+  font-size: 12px;
+}
+
+.phone {
+  height:25px;
+  text-align: center;
 }
