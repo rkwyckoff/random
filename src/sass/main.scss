@@ -15,8 +15,11 @@ h1 {
 }
 
 .personBox {
-  width: 275px;
-  height:500px;
+  width: 25%;
+  height:250px;
   border: lightgrey 1px solid;
-  
+  float:left;
+  overflow: hidden;
+
+
 }

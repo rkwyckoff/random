@@ -15,16 +15,17 @@ function makeRequest(apples) {
         for (var i =0; i < 12; i++) {
           var product = data.results[i];
           var html = boxTemplate(product);
-          $('.personBox').append(html);
+          $('.container').append(html);
 
      function boxTemplate(product) {
-          return `
+          return `  <div class="personBox">
                     <img src= "${product.picture.large}">
                     <div> ${product.name.first} ${product.name.last}</div>
                     <div> ${product.email}</div>
                     <div> ${product.location.street}</div>
                     <div> ${product.location.city}, ${product.location.state}  ${product.location.postcode}</div>
                     <div> ${product.phone}</div>
+                    </div>
                 `
               }
       }
