@@ -1,0 +1,22 @@
+* {
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  }
+.container {
+  width:1200px;
+  height: 1000px;
+  margin: 20px auto;
+  border: 1px lightgrey solid;
+}
+
+h1 {
+  text-align: center;
+}
+
+.personBox {
+  width: 275px;
+  height:500px;
+  border: lightgrey 1px solid;
+  
+}
